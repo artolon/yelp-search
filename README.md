@@ -18,10 +18,6 @@ It was fairly simply to retrieve the restaurant name. The other fields, however,
 
 Through the code in this repo, you can see I primarily used Beautiful Soup to complete this task. But before jumping into VSCode, I ran my program in a Jupyter notebook to more easily see how my code was working. 
 
-Here is an example of the resulting dataframe in my Jupyter notebook.
-![df_screenshot](https://user-images.githubusercontent.com/59490033/155899605-4f7a9472-9f98-4037-8fd2-ad5ca5891d79.PNG)
-
-
 *Please see the yelp_function.py file in this repo for the full code.*
 
 **2. Create a local API that calls your scrape function and stores the data when you call /scrape endpoint. The data you scrape should be viewable when you go to /all.**
