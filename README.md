@@ -20,3 +20,5 @@ Regarding my own online presence, I can pull information for different topics th
 ## Data Camp
 
 ![web scraping in python](https://user-images.githubusercontent.com/59490033/155861349-29164687-5444-4f09-b720-efd3fa7e0479.PNG)
+
+![MongoDB1-2](https://user-images.githubusercontent.com/59490033/155895557-b994f375-be80-48d7-80e0-8f06fe534fa5.PNG)
