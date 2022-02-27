@@ -39,7 +39,7 @@ The /scrape endpoint then called my data and stored it in a dictionary. I render
 Finally, I rendered the data into a clean table format so that the data could be more useable and more interpretable for the end user. 
 
 /scrape/all:
-![pg3](https://user-images.githubusercontent.com/59490033/155899792-eec090f1-92a9-468a-b26c-eab64189de5b.PNG)
+![pg3](https://user-images.githubusercontent.com/59490033/155900271-29ac5577-9457-4cf5-8e52-91f8ec1e2820.PNG)
 
 One thing I noticed, in general, is that the class names in the html source code are different for different locations. This felt odd to me. I would have thought that the underlying source code template would be the same for any location. I am wondering how web scrapers accounts for this? For example, if I wanted to easily scrape Yelp data for 50 restaurants in the 3 zip codes nearest to me, how would I do that efficiently? Would I need to write completely different code per zip code? Would love to learn more about this!
 
