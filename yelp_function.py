@@ -65,7 +65,7 @@ def yelp_search():
             div = soup.find_all("div", {"class": "display--inline-block__09f24__fEDiJ margin-t1__09f24__w96jn border-color--default__09f24__NPAKY"})
             for d in div:
                 var = d.find('p', class_='css-1e4fdj9')
-                if var is None or var == '':
+                if var is None:
                     var = 'Not available'
                     comments_list.append(var)
                 else:
