@@ -20,7 +20,6 @@ Through the code in this repo, you can see I primarily used Beautiful Soup to co
 
 Here is an example of the resulting dataframe in my Jupyter notebook.
 ![df_screenshot](https://user-images.githubusercontent.com/59490033/155899605-4f7a9472-9f98-4037-8fd2-ad5ca5891d79.PNG)
-![df2](https://user-images.githubusercontent.com/59490033/155899965-0eeba42b-cfd9-4064-bcfc-0f581d86f5a9.PNG)
 
 
 *Please see the yelp_function.py file in this repo for the full code.*
