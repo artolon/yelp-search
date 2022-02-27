@@ -14,7 +14,7 @@ def yelp_search():
     location_list = []
     review_list = []
     rating_list = []
-    hours_list = []
+    comments_list = []
     
     # Enter your zip code into the url
     my_zip = 63116
@@ -61,21 +61,26 @@ def yelp_search():
                     rating = star.div['aria-label']
                     rating_list.append(rating)
 
-            # Open or closed
+            # Comments
             div = soup.find_all("div", {"class": "display--inline-block__09f24__fEDiJ margin-t1__09f24__w96jn border-color--default__09f24__NPAKY"})
             for d in div:
-                hour = d.div.span.text
-                if hour != '':
-                    hours_list.append(hour)  
+                var = d.find('p', class_='css-1e4fdj9')
+                if var is None or var == '':
+                    var = 'Not available'
+                    comments_list.append(var)
+                else:
+                    var = var = d.find('p', class_='css-1e4fdj9').text
+                    comments_list.append(var) 
 
         except Exception as e:
             print(e)
     
-    # Create Data frame
-    dictionary = {'Retaurant':names_list,
-             'Neighborhood':location_list,
-             'Total Reviews':review_list,
-             'Rating':rating_list}
+    # Create Data frame; limit to 50 restaurants
+    dictionary = {'Retaurant':names_list[0:50], 
+    'Neighborhood':location_list[0:50], 
+    'Total Reviews':review_list[0:50], 
+    'Rating':rating_list[0:50], 
+    'Comments':comments_list[0:50]}
 
     df = pd.DataFrame.from_dict(dictionary)
     return df   
